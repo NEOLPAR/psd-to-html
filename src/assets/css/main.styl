@@ -70,10 +70,16 @@ body
           font-size: 17pt;
           padding: 15px 20px;
     .main-content
+      overflow: hidden
       .photo
-        display none
+        background url('../images/240_01_036.jpg') no-repeat
+        background-position 50% 0
+        opacity 0.3
+        position: absolute;
+        width: 100%;
+        height: 100%;
       .intro
-        background-color sectionBackgroundColor
+        position: relative
         text-align center
         padding: 5%
         img
@@ -81,15 +87,25 @@ body
         form
           margin auto
           overflow hidden
+          line-height 1.2
           label
             display: block
             width 100%
-          label.terms
-            display: initial
-            width 100%
           input
             width 80%
+          .check-terms
+            line-height 2
+            display: block
+            width 100%
+            label
+              display initial
+              width initial
+            input
+              width initial
+              margin-left 5px
           button
+            line-height: 2;
+            margin-top: 20px;
             display: block;
             clear: both;
             width: 100%;
@@ -136,6 +152,7 @@ body
         overflow hidden
         background-color sectionBackgroundColor
         .photo
+          position: initial
           display: block
           float: left
           width 65%
@@ -143,12 +160,20 @@ body
           border-radius 0 0 33% 0
           background url('../images/240_01_036.jpg') no-repeat
           background-position 50% 0
+          opacity 1
         .intro
+          background none
+          background-color sectionBackgroundColor
           float: left
           width 25%
           padding 5%
           img
             width: 100%
+            margin-bottom 20px
+          p
+            line-height: 1.5;
+            &.escapism-description
+              margin: 2em 0 5em 0;
           form
             label
               display: block
@@ -156,11 +181,16 @@ body
               clear left
               width 35%
               text-align left
+              line-height 2
             input
               float left
               width 60%
+            input[type="radio"]
+              margin: 7px 0 0 5px;
             button
               padding 5% 0
+              line-height 1
+              display: initial
       .section
         padding 0
         border-bottom 1px
