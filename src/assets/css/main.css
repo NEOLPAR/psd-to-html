@@ -1,13 +1,58 @@
 @import 'normalize.css';
 @import 'fonts.css';
 a {
+  text-decoration: none;
   color: #000;
-  text-decoration: underline;
+  border-bottom: 1px solid #000;
 }
 a:hover,
 a a:active,
 a a:visited {
   color: #000;
+}
+span,
+h1 {
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 20pt;
+  font-weight: normal;
+}
+i {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+}
+i.facebook_icon {
+  background: url("../images/facebook_icon.png") center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+i.twitter_icon {
+  background: url("../images/twitter_icon.png") center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+i.instagram_icon {
+  background: url("../images/instagram_icon.png") center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+p {
+  font-size: 14pt;
+  line-height: 1.2;
+}
+hr {
+  clear: both;
+  width: 90%;
+  margin: 0 auto 20px auto;
+  display: block;
+  border: 0;
+  border-top: 1px solid #d2d2d2;
 }
 body {
   font-family: Trade_Gothic;
@@ -40,7 +85,7 @@ body #main nav ul {
 }
 body #main nav ul li {
   display: inline-block;
-  font-size: 22px;
+  font-size: 17pt;
   padding: 15px 20px;
 }
 body #main .main-content .photo {
@@ -81,7 +126,36 @@ body #main .main-content .intro form button {
 }
 body #main .section {
   background-color: #ededed;
+  overflow: hidden;
   padding: 0 5%;
+}
+body #main .section .over-and-social img {
+  display: block;
+  width: 100%;
+  max-width: 315px;
+  margin: 0 auto;
+}
+body #main .section .over-and-social span {
+  display: block;
+  line-height: 7;
+  margin: 0 auto;
+  text-align: center;
+}
+body #main .section.news {
+  padding: 2% 5% 5% 5%;
+}
+body #main .section.news img {
+  float: left;
+  padding-right: 5%;
+}
+body #main .section.news h1 {
+  margin: 0;
+}
+body #main footer {
+  background-color: #d2d2d2;
+  text-align: center;
+  line-height: 4;
+  font-size: 10pt;
 }
 @media (min-width: 992px) {
   body #main {
@@ -98,11 +172,11 @@ body #main .section {
     display: block;
     float: left;
     width: 65%;
-    padding-bottom: 75%;
+    height: 840px;
     -webkit-border-radius: 0 0 33% 0;
     border-radius: 0 0 33% 0;
     background: url("../images/240_01_036.jpg") no-repeat;
-    background-position-x: 50%;
+    background-position: 50% 0;
   }
   body #main .main-content .intro {
     float: left;
@@ -127,19 +201,19 @@ body #main .section {
     padding: 5% 0;
   }
   body #main .section {
-    overflow: hidden;
+    padding: 0;
+    border-bottom: 1px;
   }
   body #main .section .description {
     float: left;
-    width: 65%;
-    margin-right: 5%;
+    width: 55%;
+    padding: 0 5%;
   }
   body #main .section .over-and-social {
-    text-align: center;
     float: left;
-    width: 25%;
+    width: 30%;
   }
-  body #main .section .over-and-social img {
-    width: 100%;
+  body #main .section.news {
+    padding-bottom: 2%;
   }
 }
