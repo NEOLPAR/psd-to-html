@@ -92,6 +92,7 @@ body #main .section {
     -webkit-border-radius: 33% 0 0 0;
     border-radius: 33% 0 0 0;
     overflow: hidden;
+    background-color: #ededed;
   }
   body #main .main-content .photo {
     display: block;
@@ -102,13 +103,11 @@ body #main .section {
     border-radius: 0 0 33% 0;
     background: url("../images/240_01_036.jpg") no-repeat;
     background-position-x: 50%;
-    margin-right: 5%;
   }
   body #main .main-content .intro {
     float: left;
     width: 25%;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 5%;
   }
   body #main .main-content .intro img {
     width: 100%;
