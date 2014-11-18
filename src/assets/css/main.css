@@ -135,7 +135,7 @@ body #main .main-content .intro form .check-terms input {
   margin-left: 5px;
 }
 body #main .main-content .intro form button {
-  line-height: 2;
+  line-height: 3;
   margin-top: 20px;
   display: block;
   clear: both;
@@ -144,7 +144,6 @@ body #main .main-content .intro form button {
   color: #fff;
   border: 0;
   font-family: Trade_Gothic;
-  padding: 1% 0;
 }
 body #main .section {
   background-color: #ededed;
