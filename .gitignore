@@ -1,0 +1,13 @@
+# OSX files
+.DS_Store
+
+# Webstorm
+.idea
+*.iml
+
+#excluding files and directories
+*.pdf
+*.psd
+angular-*/
+libs/
+source/

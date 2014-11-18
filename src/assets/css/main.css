@@ -1,0 +1,146 @@
+@import 'normalize.css';
+@import 'fonts.css';
+a {
+  color: #000;
+  text-decoration: underline;
+}
+a:hover,
+a a:active,
+a a:visited {
+  color: #000;
+}
+body {
+  font-family: Trade_Gothic;
+  background-color: #d2d2d2;
+}
+body #leaderboard {
+  max-width: 728px;
+  height: 90px;
+  background-color: #969696;
+  margin: auto;
+}
+body #logo {
+  height: 100px;
+  background: url("../images/logo.png") center no-repeat;
+}
+body #main {
+  background-color: #fff;
+  width: 100%;
+}
+body #main nav {
+  background-color: #000;
+  color: #fff;
+  height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+body #main nav ul {
+  margin: 0;
+  padding: 0;
+}
+body #main nav ul li {
+  display: inline-block;
+  font-size: 22px;
+  padding: 15px 20px;
+}
+body #main .main-content .photo {
+  display: none;
+}
+body #main .main-content .intro {
+  background-color: #ededed;
+  text-align: center;
+  padding: 5%;
+}
+body #main .main-content .intro img {
+  width: 250px;
+}
+body #main .main-content .intro form {
+  margin: auto;
+  overflow: hidden;
+}
+body #main .main-content .intro form label {
+  display: block;
+  width: 100%;
+}
+body #main .main-content .intro form label.terms {
+  display: initial;
+  width: 100%;
+}
+body #main .main-content .intro form input {
+  width: 80%;
+}
+body #main .main-content .intro form button {
+  display: block;
+  clear: both;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  font-family: Trade_Gothic;
+  padding: 1% 0;
+}
+body #main .section {
+  background-color: #ededed;
+  padding: 0 5%;
+}
+@media (min-width: 992px) {
+  body #main {
+    width: 95%;
+    margin: auto;
+  }
+  body #main .main-content {
+    -webkit-border-radius: 33% 0 0 0;
+    border-radius: 33% 0 0 0;
+    overflow: hidden;
+  }
+  body #main .main-content .photo {
+    display: block;
+    float: left;
+    width: 65%;
+    padding-bottom: 75%;
+    -webkit-border-radius: 0 0 33% 0;
+    border-radius: 0 0 33% 0;
+    background: url("../images/240_01_036.jpg") no-repeat;
+    background-position-x: 50%;
+    margin-right: 5%;
+  }
+  body #main .main-content .intro {
+    float: left;
+    width: 25%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  body #main .main-content .intro img {
+    width: 100%;
+  }
+  body #main .main-content .intro form label {
+    display: block;
+    float: left;
+    clear: left;
+    width: 35%;
+    text-align: left;
+  }
+  body #main .main-content .intro form input {
+    float: left;
+    width: 60%;
+  }
+  body #main .main-content .intro form button {
+    padding: 5% 0;
+  }
+  body #main .section {
+    overflow: hidden;
+  }
+  body #main .section .description {
+    float: left;
+    width: 65%;
+    margin-right: 5%;
+  }
+  body #main .section .over-and-social {
+    text-align: center;
+    float: left;
+    width: 25%;
+  }
+  body #main .section .over-and-social img {
+    width: 100%;
+  }
+}
