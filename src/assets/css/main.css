@@ -125,11 +125,11 @@ body #main .main-content .intro form .check-terms {
   width: 100%;
 }
 body #main .main-content .intro form .check-terms label {
-  display: initial;
-  width: initial;
+  display: inline-block;
+  width: 250px;
 }
 body #main .main-content .intro form .check-terms input {
-  width: initial;
+  width: 5%;
   margin-left: 5px;
 }
 body #main .main-content .intro form button {
@@ -188,7 +188,7 @@ body #main footer {
     background-color: #ededed;
   }
   body #main .main-content .photo {
-    position: initial;
+    position: inherit;
     display: block;
     float: left;
     width: 65%;
@@ -233,13 +233,16 @@ body #main footer {
     float: left;
     width: 60%;
   }
-  body #main .main-content .intro form input[type="radio"] {
+  body #main .main-content .intro form .check-terms label {
+    width: 90%;
+  }
+  body #main .main-content .intro form .check-terms input[type="radio"] {
     margin: 7px 0 0 5px;
   }
   body #main .main-content .intro form button {
     padding: 5% 0;
     line-height: 1;
-    display: initial;
+    display: inline-block;
   }
   body #main .section {
     padding: 0;
