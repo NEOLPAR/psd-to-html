@@ -116,6 +116,11 @@ body #main .main-content .intro form label {
   display: block;
   width: 100%;
 }
+body #main .main-content .intro form label.error {
+  color: #8b0000 !important;
+  width: 100% !important;
+  margin-bottom: 10px;
+}
 body #main .main-content .intro form input {
   width: 80%;
 }
@@ -206,7 +211,7 @@ body #main footer {
     background-color: #ededed;
     float: left;
     width: 25%;
-    padding: 5%;
+    padding: 5% 5% 0 5%;
   }
   body #main .main-content .intro .intro-block {
     background-color: inherit;
@@ -228,6 +233,9 @@ body #main footer {
     width: 35%;
     text-align: left;
     line-height: 2;
+  }
+  body #main .main-content .intro form label.error {
+    margin-bottom: inherit !important;
   }
   body #main .main-content .intro form input {
     float: left;

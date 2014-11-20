@@ -25,18 +25,18 @@
                         Escapism magazine takes a fresh look at global travel, featuring inspirational writing from some of the most exciting voices in travel, and photography and design that transports readers from busy London streets to amazing locations across the globe.
                     </p>
                     <p>Sign up for notifications below:</p>
-                    <form>
+                    <form action="#" id="signupForm" method="get">
                         <label for="firstname">Firstname</label>
-                        <input type="text" id="firstname" name="firstname"/>
+                        <input type="text" id="firstname" name="firstname" minlength="3" maxlength="20" required/>
                         <label for="surname">Surname</label>
-                        <input type="text" id="surname" name="surname"/>
+                        <input type="text" id="surname" name="surname" minlength="3" maxlength="40" required/>
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email"/>
+                        <input type="email" id="email" name="email" required/>
                         <div class="check-terms">
                             <label class="terms" for="terms">I agree to the <a href="">terms and conditions</a>:</label>
-                            <input type="radio" id="terms" name="terms"/>
+                            <input type="radio" id="terms" name="terms" required/>
                         </div>
-                        <button>Notify me!</button>
+                        <button id="submitbtn" type="submit" value="Submit">Notify me!</button>
                     </form>
                 </div>
             </div>
@@ -83,5 +83,9 @@
             &copy; 2014 SQUARE UP MEDIA
         </footer>
     </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./js/libs/jquery.min.js"><\/script>')</script>
+    <script src="./js/libs/jquery.validate.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

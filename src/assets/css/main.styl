@@ -90,6 +90,10 @@ body
           label
             display: block
             width 100%
+            &.error
+              color darkred !important
+              width 100% !important
+              margin-bottom 10px
           input
             width 80%
           .check-terms
@@ -164,7 +168,7 @@ body
           background-color sectionBackgroundColor
           float: left
           width 25%
-          padding 5%
+          padding 5% 5% 0 5%
           .intro-block
             background-color inherit
           img
@@ -182,6 +186,8 @@ body
               width 35%
               text-align left
               line-height 2
+              &.error
+                margin-bottom inherit !important
             input
               float left
               width 60%

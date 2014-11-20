@@ -11,3 +11,5 @@
 angular-*/
 libs/
 source/
+jquery-validation-1.13.1/
+jquery-validation-1.13.1.*
